@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,10 +30,11 @@
                                     <action selector="pickImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SU1-xj-txP"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YnW-qw-gyG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YnW-qw-gyG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="YnW-qw-gyG" secondAttribute="height" multiplier="1:1" id="WA6-ud-Xgp"/>
+                                    <constraint firstAttribute="height" constant="290" id="RMd-lV-syN"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt1-Ad-pWA">
@@ -47,8 +47,8 @@
                                     <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p7j-Cu-CEs"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thinking...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOP-mk-ejO">
-                                <rect key="frame" x="0.0" y="429" width="375" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thinking...." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOP-mk-ejO">
+                                <rect key="frame" x="0.0" y="358" width="375" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -56,19 +56,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YnW-qw-gyG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1uS-FH-dOD"/>
                             <constraint firstItem="2xf-YP-70a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Ee-iz-lGI"/>
-                            <constraint firstItem="YnW-qw-gyG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8RG-8a-KQU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2xf-YP-70a" secondAttribute="bottom" id="EWG-xV-HDM"/>
                             <constraint firstItem="TOP-mk-ejO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UYb-wW-3pa"/>
                             <constraint firstAttribute="trailing" secondItem="2xf-YP-70a" secondAttribute="trailing" id="eF9-ds-qqT"/>
+                            <constraint firstItem="YnW-qw-gyG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="efy-5V-fPC"/>
+                            <constraint firstAttribute="trailing" secondItem="YnW-qw-gyG" secondAttribute="trailing" id="gFr-MY-iOE"/>
                             <constraint firstAttribute="trailing" secondItem="TOP-mk-ejO" secondAttribute="trailing" id="h0y-kT-vXI"/>
                             <constraint firstItem="pt1-Ad-pWA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hrq-Dr-atB"/>
+                            <constraint firstItem="TOP-mk-ejO" firstAttribute="top" secondItem="YnW-qw-gyG" secondAttribute="bottom" constant="68" id="lqw-Z4-wgw"/>
                             <constraint firstItem="2xf-YP-70a" firstAttribute="top" secondItem="pt1-Ad-pWA" secondAttribute="bottom" id="oaa-rc-vf9"/>
                             <constraint firstItem="TOP-mk-ejO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oeh-MG-GSk"/>
-                            <constraint firstItem="TOP-mk-ejO" firstAttribute="top" secondItem="YnW-qw-gyG" secondAttribute="bottom" constant="54" id="ra7-MH-bdn"/>
                             <constraint firstAttribute="trailing" secondItem="pt1-Ad-pWA" secondAttribute="trailing" id="sFr-HL-k3a"/>
-                            <constraint firstAttribute="trailing" secondItem="YnW-qw-gyG" secondAttribute="trailing" id="zhJ-5S-Y8E"/>
+                            <constraint firstItem="YnW-qw-gyG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wsp-0B-wat"/>
                         </constraints>
                     </view>
                     <connections>

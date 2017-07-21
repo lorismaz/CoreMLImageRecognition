@@ -2,6 +2,8 @@
 
 This Swift app demo the use of CoreML models to detect the subject of an image.
 
+<img src="Screenshot.png" align="left" width="250"> 
+
 ## Requirements
 
 * XCode 9.0 beta or +

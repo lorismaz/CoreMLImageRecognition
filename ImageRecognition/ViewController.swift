@@ -38,7 +38,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
             DispatchQueue.main.async { [weak self] in
                 self?.resultLabel.isHidden = false
-                self?.resultLabel.text = "\(topResult.identifier) with \(Int(topResult.confidence * 100))% confidence"
+                self?.resultLabel.text = "\(topResult.identifier) \n with \(Int(topResult.confidence * 100))% confidence"
             }
             
         }
