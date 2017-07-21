@@ -2,7 +2,7 @@
 
 This Swift app demo the use of CoreML models to detect the subject of an image.
 
-<img src="Screenshot.png" align="left" width="250"> 
+<img src="Screenshot.png" align="left" width="250">
 
 ## Requirements
 
@@ -26,6 +26,10 @@ On line 27, replace `SqueezeNet` by the model class name you wish to use. Squeez
 Class name can be found here:
 
 ![swift generated class](modelClassImage.png "Logo Title Text 1")
+
+## Inspiration
+
+I followed this [tutorial video](https://www.youtube.com/watch?v=h2MdQoRMtlQ) in order to build this app.
 
 License
 ----------------
